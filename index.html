@@ -61,7 +61,7 @@
       <section class="hero">
         <div class="container container-hero">
           <h1 class="primary-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="primary-btn" type="button">Заказать услугу</button>
+          <button class="primary-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -122,13 +122,22 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="works-list list">
             <li class="work-item">
-              <img src="./images/box_1.jpg" alt="разметка" width="370" height="294" />
+              <div class="work-thumb">
+                <img src="./images/box_1.jpg" alt="компьютер" width="370" height="294" />
+                <p class="work-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="work-item">
-              <img src="./images/box_2.jpg" alt="оформление" width="370" height="294" />
+              <div class="work-thumb">
+                <img src="./images/box_2.jpg" alt="Приложения" width="370" height="294" />
+                <p class="work-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="work-item">
-              <img src="./images/box_3.jpg" alt="дизайн" width="370" height="294" />
+              <div class="work-thumb">
+                <img src="./images/box_3.jpg" alt="дизайн" width="370" height="294" />
+                <p class="work-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -403,5 +412,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="close-icon" width="18px" height="18px">
+            <use href="./images/icons.svg#close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
